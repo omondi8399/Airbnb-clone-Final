@@ -8,7 +8,6 @@ import {
   SubmitHandler, 
   useForm
 } from "react-hook-form";
-import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
 import { useRouter } from "next/navigation";
 
@@ -96,12 +95,7 @@ const LoginModal = () => {
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
       <hr />
-      <Button 
-        outline 
-        label="Continue with Google"
-        icon={FcGoogle}
-        onClick={() => signIn('google')}
-      />
+      
       <Button 
         outline 
         label="Continue with Github"
